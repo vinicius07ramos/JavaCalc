@@ -23,6 +23,15 @@ class Calc
 
 		return p_Prim/ p_Seg;
 	}
+	static int potencia(int x , int y){
+		int pot=1;
+		while(y>=1){
+			pot=pot*x;
+			y=y-1;
+		}
+		return pot;
+	}
+
 
 	
 	static void CaixaBranca()
@@ -63,6 +72,9 @@ class Calc
 										  break;
 						case "Divisao": calculado = divisao(prim_Oper,seg_Oper);
 										break;
+						case "Potencia": calculado = potencia(prim_Oper,seg_Oper);
+										break;
+
 					}
 					
 				// Mostra o resultado do teste:
@@ -104,6 +116,7 @@ class Calc
 					case "Adicao": resultado = Adicao(prim_Oper, seg_Oper); break;
 					case "Subtracao": resultado = Subtracao(prim_Oper, seg_Oper); break;
 					case "Divisao":resultado = divisao(prim_Oper,seg_Oper);break;
+					case "Potencia":resultado = potencia(prim_Oper,seg_Oper);break;
 				}
 				
 				System.out.println(resultado);
