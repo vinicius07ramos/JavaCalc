@@ -11,7 +11,7 @@ class CaixaPreta
 			BufferedReader saida_Calc = null;			
 			
 			String Casos_de_Teste[][] = { 
-										  {"Adicao", "60", "12", "82" }, 
+										  {"Adicao", "60", "12", "72" }, 
 										  {"Adicao", "14", "26", "40" },
 										  {"Subtracao", "70", "12", "58" },
 										  {"Subtracao", "14", "26", "-12" } 

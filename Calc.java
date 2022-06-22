@@ -19,6 +19,11 @@ class Calc
 	{
 		return (p_Prim - p_Seg);
 	}
+	static Integer divisao (int p_Prim, int p_Seg){
+
+		return p_Prim/ p_Seg;
+	}
+
 	
 	static void CaixaBranca()
 	{
@@ -27,7 +32,7 @@ class Calc
 										  {"Adicao", "27", "13", "40" }, 
 										  {"Subtracao", "50", "60", "-10" },
 										  {"Adicao", "123", "321", "444" },
-										  {"Subtracao", "99", "9", "11" } 
+										  {"Divisao", "99", "9", "11" } 
 										};
 			int quant_teste = 0;
 			int cont_teste = 0;
@@ -56,6 +61,8 @@ class Calc
 									   break;
 						case "Subtracao": calculado = Subtracao(prim_Oper, seg_Oper); 
 										  break;
+						case "Divisao": calculado = divisao(prim_Oper,seg_Oper);
+										break;
 					}
 					
 				// Mostra o resultado do teste:
@@ -96,6 +103,7 @@ class Calc
 				{
 					case "Adicao": resultado = Adicao(prim_Oper, seg_Oper); break;
 					case "Subtracao": resultado = Subtracao(prim_Oper, seg_Oper); break;
+					case "Divisao":resultado = divisao(prim_Oper,seg_Oper);break;
 				}
 				
 				System.out.println(resultado);
